@@ -9,25 +9,31 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom right, #07070d, #0f0f1a);
+      background: linear-gradient(to bottom right, #0a0a1a, #14142b);
       font-family: 'Sora', sans-serif;
-      background-image: none;
-      background-size: 20px 20px;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
     }
     .glow-text {
-      text-shadow: 0 0 6px #c084fc, 0 0 10px #8be9fd;
+      text-shadow: 0 0 8px #c084fc, 0 0 12px #8be9fd;
     }
     .card {
-      background: rgba(20, 20, 35, 0.9);
-      border: 1px solid rgba(168, 148, 255, 0.15);
-      box-shadow: 0 0 20px rgba(148, 211, 255, 0.08);
+      background: rgba(15, 15, 30, 0.95);
+      border: 1px solid rgba(138, 115, 255, 0.2);
+      box-shadow: 0 0 25px rgba(148, 211, 255, 0.15);
       transition: all 0.3s ease-in-out;
     }
     .section-title {
-      background: linear-gradient(to right, #c084fc, #8be9fd);
+      background: linear-gradient(to right, #f472b6, #c084fc, #8be9fd);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Orbitron', sans-serif;
+    }
+    a {
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      filter: brightness(1.2);
     }
   </style>
 </head>
