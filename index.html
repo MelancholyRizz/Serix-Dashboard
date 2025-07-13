@@ -6,46 +6,51 @@
   <title>Serix Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom right, #0b0d16, #131628);
+      background: linear-gradient(to bottom right, #1a1b2e, #292a3e);
       font-family: 'Sora', sans-serif;
+      background-image: radial-gradient(circle at 1px 1px, #7fffd4 1px, transparent 0);
+      background-size: 20px 20px;
     }
     .glow-text {
-      text-shadow: 0 0 5px #7fffd4, 0 0 10px #ff9ce9;
+      text-shadow: 0 0 6px #e0aaff, 0 0 12px #9aafff;
     }
     .card {
-      background: rgba(23, 25, 42, 0.85);
-      border: 1px solid rgba(255, 156, 233, 0.2);
-      box-shadow: 0 0 20px rgba(127, 255, 212, 0.05);
+      background: rgba(35, 37, 58, 0.9);
+      border: 1px solid rgba(233, 168, 255, 0.2);
+      box-shadow: 0 0 25px rgba(168, 204, 255, 0.08);
       transition: all 0.3s ease-in-out;
     }
     .section-title {
-      background: linear-gradient(to right, #7fffd4, #ff9ce9);
+      background: linear-gradient(to right, #a78bfa, #f472b6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Orbitron', sans-serif;
     }
   </style>
 </head>
-<body class="text-white">
-  <header class="p-6 flex justify-between items-center border-b border-aqua-400 bg-black/20">
+<body class="text-white" data-aos="fade-in">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <header class="p-6 flex justify-between items-center border-b border-pink-500 bg-black/20">
     <div class="flex items-center space-x-4">
-      <img src="https://cdn.discordapp.com/attachments/1393261645928726530/1393890324820000859/screenshot_1752399730962.png" alt="Serix Avatar" class="w-20 h-20 rounded-full border-4 border-aqua-300 shadow-xl transition-all duration-300 hover:scale-105">
+      <img src="https://cdn.discordapp.com/attachments/1393261645928726530/1393890324820000859/screenshot_1752399730962.png" alt="Serix Avatar" class="w-20 h-20 rounded-full border-4 border-indigo-300 shadow-xl transition-all duration-300 hover:scale-105">
       <div>
         <h1 class="text-3xl font-bold glow-text">✦ Serix Dashboard</h1>
         <p class="text-pink-200 italic text-sm">Coded chaos in a soft shell. Powered by ChatGPT API.</p>
         <div class="mt-3 flex flex-wrap gap-3">
-          <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" target="_blank" class="bg-gradient-to-r from-aqua-400 to-pink-400 text-black font-semibold px-4 py-2 rounded-md shadow-md hover:scale-105 transition">➤ Invite Serix</a>
-          <a href="https://discord.gg/YOUR_SERVER_INVITE" target="_blank" class="bg-black border border-aqua-300 text-aqua-300 px-4 py-2 rounded-md hover:bg-aqua-300 hover:text-black transition">🏠 Join Server</a>
-          <a href="#" class="bg-gray-800 border border-pink-300 text-pink-300 px-4 py-2 rounded-md hover:bg-pink-400 hover:text-black transition">🧠 Ask AI</a>
+          <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" target="_blank" class="bg-gradient-to-r from-purple-400 to-pink-400 text-black font-semibold px-4 py-2 rounded-md shadow-md hover:scale-105 transition">➤ Invite Serix</a>
+          <a href="https://discord.gg/YOUR_SERVER_INVITE" target="_blank" class="bg-black border border-indigo-300 text-indigo-300 px-4 py-2 rounded-md hover:bg-indigo-300 hover:text-black transition">🏠 Join Server</a>
+          <a href="#" class="bg-gray-800 border border-purple-300 text-purple-300 px-4 py-2 rounded-md hover:bg-purple-400 hover:text-black transition">🧠 Ask AI</a>
         </div>
       </div>
     </div>
   </header>
 
   <main class="p-6 space-y-10">
-    <section class="card p-6 rounded-xl hover:shadow-lg">
+    <section class="card p-6 rounded-xl hover:shadow-lg" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-3 section-title">📜 About Valora SMP</h2>
       <p class="text-white/90 leading-relaxed">
         Valora SMP is a mystical Lifesteal Minecraft server (Java 1.20.4) hosted on Aternos with plugins like TAB, LuckPerms, PlaceholderAPI, and EconomyShopGUI.
@@ -53,32 +58,32 @@
       </p>
     </section>
 
-    <section class="card p-6 rounded-xl hover:shadow-lg">
+    <section class="card p-6 rounded-xl hover:shadow-lg" data-aos="fade-up">
       <h2 class="text-xl font-semibold mb-3 section-title">💎 Rank Perks</h2>
       <ul class="space-y-2 text-white/90">
-        <li>🐣 <strong class="text-aqua-300">Drifter</strong> — Level 7 (~2,000 XP) <span class="text-sm text-pink-300">| Can send GIFs</span></li>
-        <li>🌙 <strong class="text-aqua-300">Lost One</strong> — Level 15 (~8,000 XP) <span class="text-sm text-pink-300">| Images & embeds</span></li>
-        <li>🦋 <strong class="text-aqua-300">Shadowborn</strong> — Level 20 (~13,500 XP) <span class="text-sm text-pink-300">| Custom role + perks</span></li>
+        <li>🐣 <strong class="text-indigo-300">Drifter</strong> — Level 7 (~2,000 XP) <span class="text-sm text-pink-300">| Can send GIFs</span></li>
+        <li>🌙 <strong class="text-indigo-300">Lost One</strong> — Level 15 (~8,000 XP) <span class="text-sm text-pink-300">| Images & embeds</span></li>
+        <li>🦋 <strong class="text-indigo-300">Shadowborn</strong> — Level 20 (~13,500 XP) <span class="text-sm text-pink-300">| Custom role + perks</span></li>
       </ul>
     </section>
 
-    <section class="card p-6 rounded-xl hover:shadow-lg">
+    <section class="card p-6 rounded-xl hover:shadow-lg" data-aos="fade-up">
       <h2 class="text-xl font-semibold mb-3 section-title">📌 Server Info</h2>
       <p class="mb-2 text-white/90">Clueless Domain • <em>Where madness whispers & gamers rise.</em></p>
       <p class="text-sm text-pink-200">➤ To check your current level: Use <code class="bg-gray-800 px-1 rounded text-aqua-400">#id</code> in <code class="bg-gray-800 px-1 rounded text-aqua-400">#bot-channel</code>.</p>
     </section>
 
-    <section class="card p-6 rounded-xl hover:shadow-lg">
+    <section class="card p-6 rounded-xl hover:shadow-lg" data-aos="fade-up">
       <h2 class="text-xl font-semibold mb-3 section-title">🔗 Quick Links</h2>
       <ul class="list-disc list-inside text-white/90 space-y-1">
-        <li><a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" class="text-aqua-300 hover:underline transition-all duration-300">➤ Invite Serix</a></li>
-        <li><a href="#" class="text-aqua-300 hover:underline transition-all duration-300">📊 View Leaderboard</a></li>
-        <li><a href="#" class="text-aqua-300 hover:underline transition-all duration-300">🎁 Claim Role Reward</a></li>
+        <li><a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" class="text-indigo-300 hover:underline transition-all duration-300">➤ Invite Serix</a></li>
+        <li><a href="#" class="text-indigo-300 hover:underline transition-all duration-300">📊 View Leaderboard</a></li>
+        <li><a href="#" class="text-indigo-300 hover:underline transition-all duration-300">🎁 Claim Role Reward</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="p-6 text-center text-aqua-300 text-sm border-t border-pink-600">
+  <footer class="p-6 text-center text-indigo-300 text-sm border-t border-pink-600">
     ✧ 2025 Clueless Domain • Powered by Serix & ChatGPT ✧
   </footer>
 </body>
