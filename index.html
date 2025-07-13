@@ -5,56 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serix Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom right, #0e0c1b, #1a162f);
+      background: linear-gradient(to bottom right, #0b0d16, #131628);
       font-family: 'Poppins', sans-serif;
     }
     .glow-text {
-      text-shadow: 0 0 5px #ff77ff, 0 0 10px #ff77ff;
+      text-shadow: 0 0 5px #7fffd4, 0 0 10px #ff9ce9;
+    }
+    .card {
+      background: rgba(23, 25, 42, 0.85);
+      border: 1px solid rgba(255, 156, 233, 0.2);
+      box-shadow: 0 0 20px rgba(127, 255, 212, 0.05);
+    }
+    .section-title {
+      background: linear-gradient(to right, #ff9ce9, #7fffd4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Orbitron', sans-serif;
     }
   </style>
 </head>
 <body class="text-white">
-  <header class="p-6 flex justify-between items-center border-b border-purple-900 bg-gradient-to-r from-purple-800/30 to-pink-800/10">
+  <header class="p-6 flex justify-between items-center border-b border-pink-500 bg-black/20">
     <div class="flex items-center space-x-4">
-      <img src="https://cdn.discordapp.com/attachments/1139954972851699864/1212121212121/serix_avatar.png" alt="Serix Avatar" class="w-14 h-14 rounded-full border-2 border-pink-500 shadow-lg">
+      <img src="https://cdn.discordapp.com/attachments/1393261645928726530/1393890324820000859/screenshot_1752399730962.png" alt="Serix Avatar" class="w-20 h-20 rounded-full border-4 border-pink-400 shadow-xl">
       <div>
-        <h1 class="text-2xl font-bold glow-text">✧ Serix Dashboard</h1>
-        <p class="text-pink-300 text-sm italic">Soft on the outside, coded with chaos.</p>
+        <h1 class="text-3xl font-bold glow-text">✦ Serix Dashboard</h1>
+        <p class="text-pink-200 italic text-sm">Coded chaos in a soft shell. Powered by ChatGPT API.</p>
       </div>
     </div>
-    <a href="#" class="bg-pink-600 px-4 py-2 rounded-md hover:bg-pink-700 transition shadow-md">➤ Invite Serix</a>
+    <a href="#" class="bg-gradient-to-r from-pink-500 to-aqua-400 px-4 py-2 rounded-md hover:scale-105 transition shadow-md font-semibold">➤ Invite Serix</a>
   </header>
 
-  <main class="p-6 space-y-8">
-    <section class="bg-gray-900/70 p-6 rounded-xl shadow-lg border border-pink-600">
-      <h2 class="text-xl font-semibold mb-3 text-pink-300">📜 Rank Perks</h2>
+  <main class="p-6 space-y-10">
+    <section class="card p-6 rounded-xl">
+      <h2 class="text-2xl font-semibold mb-3 section-title">📜 About Valora SMP</h2>
+      <p class="text-white/90 leading-relaxed">
+        Valora SMP is a mystical Minecraft realm hosted on Aternos (Java 1.20.4) with plugins like TAB, LuckPerms, PlaceholderAPI, and EconomyShopGUI. 
+        With glowing scoreboards, animated tablists, and personalized player perks — it’s more than a survival server; it’s a ✧ vibe ✧.
+      </p>
+    </section>
+
+    <section class="card p-6 rounded-xl">
+      <h2 class="text-xl font-semibold mb-3 section-title">🕊️ Rank Perks</h2>
       <ul class="space-y-2 text-white/90">
-        <li>🕊️ <strong class="text-purple-300">Drifter</strong> — Level 7 (~2,000 XP) <span class="text-sm text-pink-300">| Can send GIFs</span></li>
-        <li>🌒 <strong class="text-purple-300">Lost One</strong> — Level 15 (~8,000 XP) <span class="text-sm text-pink-300">| Images & embeds</span></li>
-        <li>✧ <strong class="text-purple-300">Shadowborn</strong> — Level 20 (~13,500 XP) <span class="text-sm text-pink-300">| Custom role + perks</span></li>
+        <li>🕊️ <strong class="text-aqua-300">Drifter</strong> — Level 7 (~2,000 XP) <span class="text-sm text-pink-300">| Can send GIFs</span></li>
+        <li>🌒 <strong class="text-aqua-300">Lost One</strong> — Level 15 (~8,000 XP) <span class="text-sm text-pink-300">| Images & embeds</span></li>
+        <li>✧ <strong class="text-aqua-300">Shadowborn</strong> — Level 20 (~13,500 XP) <span class="text-sm text-pink-300">| Custom role + perks</span></li>
       </ul>
     </section>
 
-    <section class="bg-gray-900/70 p-6 rounded-xl shadow-lg border border-purple-500">
-      <h2 class="text-xl font-semibold mb-3 text-purple-300">🗓️ Server Info</h2>
+    <section class="card p-6 rounded-xl">
+      <h2 class="text-xl font-semibold mb-3 section-title">🗓️ Server Info</h2>
       <p class="mb-2 text-white/90">Clueless Domain • <em>Where madness whispers & gamers rise.</em></p>
-      <p class="text-sm text-purple-200">➤ To check your current level: Use <code class="bg-gray-800 px-1 rounded text-pink-400">#id</code> in <code class="bg-gray-800 px-1 rounded text-pink-400">#bot-channel</code>.</p>
+      <p class="text-sm text-pink-200">➤ To check your current level: Use <code class="bg-gray-800 px-1 rounded text-aqua-400">#id</code> in <code class="bg-gray-800 px-1 rounded text-aqua-400">#bot-channel</code>.</p>
     </section>
 
-    <section class="bg-gray-900/70 p-6 rounded-xl shadow-lg border border-pink-400">
-      <h2 class="text-xl font-semibold mb-3 text-pink-200">💫 Quick Links</h2>
+    <section class="card p-6 rounded-xl">
+      <h2 class="text-xl font-semibold mb-3 section-title">💫 Quick Links</h2>
       <ul class="list-disc list-inside text-white/90 space-y-1">
-        <li><a href="#" class="text-pink-400 hover:underline">Invite Serix</a></li>
-        <li><a href="#" class="text-pink-400 hover:underline">View Leaderboard</a></li>
-        <li><a href="#" class="text-pink-400 hover:underline">Claim Role Reward</a></li>
+        <li><a href="#" class="text-aqua-300 hover:underline">Invite Serix</a></li>
+        <li><a href="#" class="text-aqua-300 hover:underline">View Leaderboard</a></li>
+        <li><a href="#" class="text-aqua-300 hover:underline">Claim Role Reward</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="p-6 text-center text-purple-300 text-sm border-t border-pink-600">
-    ✧ 2025 Clueless Domain • Powered by Serix ✧
+  <footer class="p-6 text-center text-pink-400 text-sm border-t border-pink-600">
+    ✧ 2025 Clueless Domain • Powered by Serix & ChatGPT ✧
   </footer>
 </body>
 </html>
+
