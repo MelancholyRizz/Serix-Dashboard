@@ -2,32 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="theme-color" content="#7b0b0b">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serix Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Sora:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .smooth-enter {
+      animation: fadeSlideIn 0.8s ease-out both;
+    }
     body {
-      background: linear-gradient(to bottom right, #07070d, #0f0f1a);
+      background: linear-gradient(to bottom right, #0a0a1a, #14142b);
       font-family: 'Sora', sans-serif;
-      background-image: none;
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
       background-size: 20px 20px;
     }
     .glow-text {
-      text-shadow: 0 0 6px #c084fc, 0 0 10px #8be9fd;
+      text-shadow: 0 0 8px #c084fc, 0 0 12px #8be9fd;
     }
     .card {
-      background: rgba(20, 20, 35, 0.9);
-      border: 1px solid rgba(168, 148, 255, 0.15);
-      box-shadow: 0 0 20px rgba(148, 211, 255, 0.08);
+      background: rgba(15, 15, 30, 0.95);
+      border: 1px solid rgba(138, 115, 255, 0.2);
+      box-shadow: 0 0 25px rgba(148, 211, 255, 0.15);
       transition: all 0.3s ease-in-out;
     }
     .section-title {
-      background: linear-gradient(to right, #c084fc, #8be9fd);
+      background: linear-gradient(to right, #f472b6, #c084fc, #8be9fd);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Orbitron', sans-serif;
+    }
+    a {
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      filter: brightness(1.2);
     }
   </style>
 </head>
@@ -50,7 +70,7 @@
   </header>
 
   <main class="p-6 space-y-10">
-    <section class="card p-6 rounded-xl hover:shadow-lg" data-aos="fade-up">
+    <section class="card p-6 rounded-xl hover:shadow-lg smooth-enter" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-3 section-title">📜 About Valora SMP</h2>
       <p class="text-gray-300 leading-relaxed">
         Valora SMP is a mystical Lifesteal Minecraft server (Java 1.20.4) hosted on Aternos with plugins like TAB, LuckPerms, PlaceholderAPI, and EconomyShopGUI.
@@ -83,8 +103,8 @@
     </section>
   </main>
 
-  <footer class="p-6 text-center text-purple-300 text-sm border-t border-purple-600">
-    ✧ 2025 Clueless Domain • Powered by Serix & ChatGPT ✧
+  $1
+  <p class="text-xs text-red-400 mt-2">Created with chaos & code by melancholy.</p>
   </footer>
 </body>
 </html>
